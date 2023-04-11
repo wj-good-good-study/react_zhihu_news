@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" href="../src/assets/reset.min.css">
+  <title>知乎日报</title>
+  <style>
+    html {
+      font-size: 100px;
+
+    }
+
+    html,
+    body {
+      height: 100%;
+      background-color: #f4f4f4;
+    }
+
+    #root {
+      margin: 0 auto;
+      max-width: 750px;
+      height: 100%;
+      background-color: #fff;
+      font-size: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    响应式布局
+  </div>
+
+  <script>
+    (function () {
+      const computed = () => {
+        let html = document.documentElement,
+          deviceW = html.clientWidth,
+          designW = 750;
+        let ratio = deviceW * 100 / designW;
+      };
+      computed();
+      window.addEventListener('resize', computed);
+    })();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+@import './assets/reset.min.css';
+
+html,
+body {
+    height: 100%;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    min-height: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.adm-dot-loading {
+    font-size: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.adm-button-loading-wrapper {
+    .adm-dot-loading {
+        font-size: 30px;
+        position: static;
+        transform: none;
+    }
+}
+
+.adm-toast-main {
+    max-width: 240px !important;
+    font-size: 28px !important;
+
+    .adm-toast-icon {
+        font-size: 40px !important;
+    }
+}
